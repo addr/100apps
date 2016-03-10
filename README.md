@@ -11,4 +11,6 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 # Apps
 
-[Day 1](day1) - Hacking with Swift first project, shows a list of local images and displays them
+* [Day 1](day1) - Hacking with Swift first project, shows a list of local images and displays them.
+
+* [Day 2](day2) - Hacking with Swift second project, a single view game that shows images of 3 flags, and the user has to tap the flag of the country indicated in the title bar. If the answer is correct, user's score goes up by one, and down by one if not. I made one change here: to display the current score in the toolbar (original just had the score in an alert).
