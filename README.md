@@ -14,3 +14,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 1](day1) - Hacking with Swift first project, shows a list of local images and displays them.
 
 * [Day 2](day2) - Hacking with Swift second project, a single view game that shows images of 3 flags, and the user has to tap the flag of the country indicated in the title bar. If the answer is correct, user's score goes up by one, and down by one if not. I made one change here: to display the current score in the toolbar (original just had the score in an alert).
+
+* [Day 3](day3) - Hacking with Swift third project, adding share functionality to [Day 1](day1) project using iOS `UIActivityViewController`. One modification: checking to make sure an image is selected before invoking the sharing options and displaying an alert if an image wasn't selected (only applies to iPad versions).
