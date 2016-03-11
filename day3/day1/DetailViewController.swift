@@ -6,6 +6,7 @@
 //  Copyright © 2016 Abstracted Reality. All rights reserved.
 //
 
+import Social
 import UIKit
 
 class DetailViewController: UIViewController {
@@ -56,6 +57,13 @@ class DetailViewController: UIViewController {
             presentViewController(ac, animated: true, completion: nil)
         }
 
+    }
+    @IBAction func shareToFBTapped(sender: UIButton) {
+        let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        vc.setInitialText("look at this great picture!")
+        vc.addImage(detailImageView.image!)
+        vc.addURL(NSURL(string: "http://www.photolib.noaa.gov/nssl"))
+        presentViewController(vc, animated: true, completion: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

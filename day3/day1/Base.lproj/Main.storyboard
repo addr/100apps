@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -32,16 +33,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0u-Wd-6I5">
-                                <rect key="frame" x="0.0" y="11" width="600" height="589"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0u-Wd-6I5">
+                                <rect key="frame" x="0.0" y="6" width="600" height="594"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-0X-6H4">
+                                <rect key="frame" x="35" y="562" width="146" height="30"/>
+                                <state key="normal" title="Share to Facebook"/>
+                                <connections>
+                                    <action selector="shareToFBTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="tcY-aD-etU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="U0u-Wd-6I5" secondAttribute="trailing" id="4Ib-YX-VIZ"/>
-                            <constraint firstItem="U0u-Wd-6I5" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="top" constant="11" id="74l-5e-uNl"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="U0u-Wd-6I5" secondAttribute="bottom" id="CdH-2R-kyD"/>
+                            <constraint firstItem="U0u-Wd-6I5" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="topMargin" id="AZl-G3-NtF"/>
+                            <constraint firstItem="ezL-0X-6H4" firstAttribute="top" secondItem="U0u-Wd-6I5" secondAttribute="bottom" constant="1" id="Cas-8a-6N5"/>
                             <constraint firstItem="U0u-Wd-6I5" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="HDe-i7-oBD"/>
+                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="U0u-Wd-6I5" secondAttribute="bottom" constant="1" id="lyQ-re-B7k"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -128,6 +136,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6S0-TO-JiA"/>
+        <segue reference="Tll-UG-LXB"/>
     </inferredMetricsTieBreakers>
 </document>
