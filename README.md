@@ -17,4 +17,6 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 3](day3) - Hacking with Swift third project, adding share functionality to [Day 1](day1) project using iOS `UIActivityViewController`. One modification: checking to make sure an image is selected before invoking the sharing options and displaying an alert if an image wasn't selected (only applies to iPad versions).
 
-* [Day 4](day4) - Hacking with Swift fourth project, working with web views using WebKit.
+* [Day 4](day4) - Hacking with Swift fourth project, working with web views using WebKit. Creates a webview with an action sheet of URLs that the user can select to navigate to.
+
+* [Day 5](day5) - Hacking with Swift fifth project. Simple word game that asks the user to create words from the letters of a given word (loaded from a text file). Does some basic checks and error handling to make sure a word is real, it contains only the letters in the original word, is 3 characters or more, and the user hasn't already added a word. I modified this slightly by adding some more robust error handling.
