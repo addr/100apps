@@ -20,3 +20,7 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 4](day4) - Hacking with Swift fourth project, working with web views using WebKit. Creates a webview with an action sheet of URLs that the user can select to navigate to.
 
 * [Day 5](day5) - Hacking with Swift fifth project. Simple word game that asks the user to create words from the letters of a given word (loaded from a text file). Does some basic checks and error handling to make sure a word is real, it contains only the letters in the original word, is 3 characters or more, and the user hasn't already added a word. I modified this slightly by adding some more robust error handling.
+
+* [Day 6](day6) - Hacking with Swift sixth project. A modification of Day 2 project to support viewing the game in landscape mode. Uses Auto Layout to specify constraints programmatically.
+
+* [Day 7](day7) - Hacking with Swift seventh project. Introduces HTTP calls by requesting whitehouse.gov petitions, then parses the response JSON into a split view controller so the user can select each petition from a table view to see the detail of each petition. I made a few modifications here. Instead of copying the SwiftyJSON library into my project, I used CocoaPods to manage the depedency. I also modified the detail view to display petition text inside of a UILabel instead of a webview as in the original project.
