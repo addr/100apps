@@ -24,3 +24,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 6](day6) - Hacking with Swift sixth project. A modification of Day 2 project to support viewing the game in landscape mode. Uses Auto Layout to specify constraints programmatically.
 
 * [Day 7](day7) - Hacking with Swift seventh project. Introduces HTTP calls by requesting whitehouse.gov petitions, then parses the response JSON into a split view controller so the user can select each petition from a table view to see the detail of each petition. I made a few modifications here. Instead of copying the SwiftyJSON library into my project, I used CocoaPods to manage the depedency. I also modified the detail view to display petition text inside of a UILabel instead of a webview as in the original project.
+
+* [Day 8](day8) - Hacking with Swift eighth project. Another word game, but this time a bit more complex. The user is given seven clues and groups of three letters. The user then has to make the words referring to the clues by tapping on the letter groups to come up with the answer. Once all answers are found a new level is loaded.
