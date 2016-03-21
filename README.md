@@ -28,3 +28,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 8](day8) - Hacking with Swift eighth project. Another word game, but this time a bit more complex. The user is given seven clues and groups of three letters. The user then has to make the words referring to the clues by tapping on the letter groups to come up with the answer. Once all answers are found a new level is loaded.
 
 * [Day 9](day9) - Hacking with Swift ninth project. Just a copy of day 7, but instead of loading data on the main thread, this project uses Grand Central Dispatch to load data in the background without blocking the UI.
+
+* [Day 10](day10) - Hacking with Swift tenth project. A new project that uses UICollectionView to allow the user to add a collection of people with a name associate to each one. Supports accessing the user's stored images and associating it with a UIImage in a cell within the UICollectionView.
