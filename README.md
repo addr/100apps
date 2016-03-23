@@ -31,4 +31,4 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 10](day10) - Hacking with Swift tenth project. A new project that uses UICollectionView to allow the user to add a collection of people with a name associate to each one. Supports accessing the user's stored images and associating it with a UIImage in a cell within the UICollectionView.
 
-* [Day 11](day11) - Hacking with Swift eleventh project. A simple 2D game using SpriteKit (based on Peggle).
+* [Day 11](day11) - Hacking with Swift eleventh project. A simple 2D game using SpriteKit (based on Peggle). I made a few modifications: ball color changes randomly, balls are automatically dropped from the top of the screen (as opposed to coming from any height), and I gave the player a limit of 5 balls. With each successful hit in a good slot another ball is provided, while hits in a 'bad' slot reduce the number of balls by one. Once the number of balls reaches zero, the player's score resets.

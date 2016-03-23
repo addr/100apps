@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import UIKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var scoreLabel: SKLabelNode!
@@ -15,6 +16,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var score: Int = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
+        }
+    }
+    
+    var numOfBallsLabel: SKLabelNode!
+    
+    var numOfBalls: Int = 5  {// start with 5 balls
+        didSet {
+            numOfBallsLabel.text = "Number of Balls: \(numOfBalls)"
         }
     }
     
@@ -29,6 +38,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
     }
+    
+    let ballColor: [String] = ["ballBlue", "ballRed", "ballGreen", "ballGrey", "ballYellow", "ballCyan"]
+    
     override func didMoveToView(view: SKView) {
         let background = SKSpriteNode(imageNamed: "background.jpg")
         background.position = CGPoint(x: 512, y: 384)
@@ -60,11 +72,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         editLabel.text = "Edit"
         editLabel.position = CGPoint(x: 80, y: 700)
         addChild(editLabel)
+        
+        numOfBallsLabel = SKLabelNode(fontNamed: "Chalkduster")
+        numOfBallsLabel.text = "Number of Balls: 5"
+        numOfBallsLabel.horizontalAlignmentMode = .Center
+        numOfBallsLabel.position = CGPoint(x: 440, y: 700)
+        addChild(numOfBallsLabel)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if let touch = touches.first {
-            let location = touch.locationInNode(self)
+            var location = touch.locationInNode(self)
             let objects = nodesAtPoint(location) as [SKNode]
             
             if objects.contains(editLabel) {
@@ -80,14 +98,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                     box.physicsBody!.dynamic = false
                     
                     addChild(box)
-                } else {
-                    let ball = SKSpriteNode(imageNamed: "ballRed")
+                } else if numOfBalls > 0 {
+                    let ball = SKSpriteNode(imageNamed: ballColor[GKRandomSource.sharedRandom().nextIntWithUpperBound(6)])
                     ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
                     ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
                     ball.physicsBody!.restitution = 0.4
+                    if(location.y <= 700) { // force balls to start at the top of the screen
+                        location.y = 700
+                    }
                     ball.position = location
                     ball.name = "ball"
                     addChild(ball)
+                } else { // all our balls are gone and we need to restart the game
+                    self.score = 0
+                    self.numOfBalls = 5
+
                 }
 
             }
@@ -139,9 +164,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if object.name == "good" {
             destroyBall(ball)
             score += 1
+            numOfBalls += 1
         } else if object.name == "bad" {
             destroyBall(ball)
             score -= 1
+            numOfBalls -= 1
         }
     }
     
