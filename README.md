@@ -34,3 +34,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 11](day11) - Hacking with Swift eleventh project. A simple 2D game using SpriteKit (based on Peggle). I made a few modifications: ball color changes randomly, balls are automatically dropped from the top of the screen (as opposed to coming from any height), and I gave the player a limit of 5 balls. With each successful hit in a good slot another ball is provided, while hits in a 'bad' slot reduce the number of balls by one. Once the number of balls reaches zero, the player's score resets.
 
 * [Day 12](day12) - Hacking with Swift twelfth project. Modification of day 10 that uses NSUserDefaults to persist Person objects across app sessions.
+
+* [Day 13](day13) - Hacking with Swift thirteenth project. Basic Core Image program that takes an image from the user's photo library and applies an image filter the user selects. Also includes an intensity slider, and allows the user to save the modified image to the device's photo library.
