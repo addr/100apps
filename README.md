@@ -36,3 +36,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 12](day12) - Hacking with Swift twelfth project. Modification of day 10 that uses NSUserDefaults to persist Person objects across app sessions.
 
 * [Day 13](day13) - Hacking with Swift thirteenth project. Basic Core Image program that takes an image from the user's photo library and applies an image filter the user selects. Also includes an intensity slider, and allows the user to save the modified image to the device's photo library.
+
+* [Day 14](day14) - Hacking with Swift fourteenth project. A whack-a-mole style game, only with penguins.
