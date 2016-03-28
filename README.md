@@ -38,3 +38,5 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 13](day13) - Hacking with Swift thirteenth project. Basic Core Image program that takes an image from the user's photo library and applies an image filter the user selects. Also includes an intensity slider, and allows the user to save the modified image to the device's photo library.
 
 * [Day 14](day14) - Hacking with Swift fourteenth project. A whack-a-mole style game, only with penguins.
+
+* [Day 15](day15) - Hacking with Swift fifteenth project. A simple project to test out Core Animation, transforms an image and animates it with a series of taps.
