@@ -40,3 +40,15 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 14](day14) - Hacking with Swift fourteenth project. A whack-a-mole style game, only with penguins.
 
 * [Day 15](day15) - Hacking with Swift fifteenth project. A simple project to test out Core Animation, transforms an image and animates it with a series of taps.
+
+* [Day 16](day16) - Hacking with Swift sixteenth project. A Safari extension that allows the user to enter arbitrary JavaScript and have it execute on the current page.
+
+* [Day 17](day17) - Hacking with Swift seventeenth project. A 'Fruit Ninja' style game that involves a lot of SpriteKit.
+
+# App Ideas
+
+1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
+2. Tip calculator. User enters in a bill total, selects what percentage tip he/she would like to leave, and the app displays the tip amount. The app also displays the total bill amount with the selected tip applied.
+3. Tap Me! game. The object of the game is to tap a button as many times as possible in 30 seconds. The game will keep track of the user's score in real time, record the user's total score and save it across sessions, provide a 'high score' listing, and allow multiple users to record scores.
+4. Simple image manipulation program (ala Instagram). Allow the user to select an image from photo library, apply one or more filters with intensity, and save the modified picture to disk.
+5. US Capital cities game. A map pin is placed on a location in the US, and the user has to pick the right city from a list of choices. The app keeps track of how many the user has gotten right, with a high score.
