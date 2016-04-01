@@ -45,6 +45,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 17](day17) - Hacking with Swift seventeenth project. A 'Fruit Ninja' style game that involves a lot of SpriteKit.
 
+* [Day 18](day18) - Hacking with Swift seventeenth project. Shows how to use AppDelegate to set an app-wide option (in this case, an ad). Also includes a breakpoint, with a few other Xcode debugging techniques.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
