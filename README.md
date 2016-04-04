@@ -45,7 +45,9 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 17](day17) - Hacking with Swift seventeenth project. A 'Fruit Ninja' style game that involves a lot of SpriteKit.
 
-* [Day 18](day18) - Hacking with Swift seventeenth project. Shows how to use AppDelegate to set an app-wide option (in this case, an ad). Also includes a breakpoint, with a few other Xcode debugging techniques.
+* [Day 18](day18) - Hacking with Swift eighteenth project. Shows how to use AppDelegate to set an app-wide option (in this case, an ad). Also includes a breakpoint, with a few other Xcode debugging techniques.
+
+* [Day 19](day19) - Hacking with Swift nineteenth project. Just one MKMapView with a few pins dropped. Each pin has a title and information button that shows an alert with more information about the pinned city.
 
 # App Ideas
 
