@@ -5,11 +5,13 @@ I'll mostly be doing Swift/iOS, maybe some React Native. With the exception of t
 
 Requirements are in the form of [user stories](https://www.mountaingoatsoftware.com/agile/user-stories), and UI design is simple hand drawn wireframes.
 
-I'll be starting with iOS (Swift). Since I'm totally new to Swift, the first projects will be from [Hacking with Swift](https://www.hackingwithswift.com), probably verbatim with a few changes thrown in for funsies. The focus of these simple projects is to get productive with Swift so I can start the 'real' projects.
+I'll be starting with iOS (Swift). Since I'm totally new to Swift, the first 30 projects will be from [Hacking with Swift](https://www.hackingwithswift.com), probably verbatim with a few changes thrown in for funsies. The focus of these simple projects is to get productive with Swift so I can start the 'real' projects.
 
 I tried starting out with a 'real' project (a simple Instagram viewer that would show pictures taken by people around you), but the additional complexity of making HTTP calls, dealing with OAuth, handling responses, etc... would mean I couldn't stick to the app-a-day rule. So until I get a handle on the most fundamental Swift concepts (and I'm spending the majority of my time coding instead of Googling), I'll stick to the toy projects.
 
 # Apps
+
+## Hacking with Swift
 
 * [Day 1](day1) - Hacking with Swift first project, shows a list of local images and displays them.
 
@@ -48,6 +50,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 * [Day 18](day18) - Hacking with Swift eighteenth project. Shows how to use AppDelegate to set an app-wide option (in this case, an ad). Also includes a breakpoint, with a few other Xcode debugging techniques.
 
 * [Day 19](day19) - Hacking with Swift nineteenth project. Just one MKMapView with a few pins dropped. Each pin has a title and information button that shows an alert with more information about the pinned city.
+
+* [Day 20](day20) - A SpriteKit game that launches fireworks in a few patterns. The player selects fireworks of the same color, then shakes the device to 'explode' the fireworks and add to the player's score. Selecting more fireworks of the same color yields a higher score.
 
 # App Ideas
 
