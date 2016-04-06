@@ -53,6 +53,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 20](day20) - A SpriteKit game that launches fireworks in a few patterns. The player selects fireworks of the same color, then shakes the device to 'explode' the fireworks and add to the player's score. Selecting more fireworks of the same color yields a higher score.
 
+* [Day 21](day21) - A proof of concept for local and push notifications. A single view application with two buttons: one to register a local notification (prompting the user for permission to enable notifications), and one to schedule a local notification 5 seconds after the button is pressed. The Hacking with Swift tutorial only included local notifications, but I did a bit more configuration in AppDelegate to enable remote push notifications using the [Houston](https://github.com/nomad/Houston) command line tool for push notification testing.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
