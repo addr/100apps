@@ -55,6 +55,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 21](day21) - A proof of concept for local and push notifications. A single view application with two buttons: one to register a local notification (prompting the user for permission to enable notifications), and one to schedule a local notification 5 seconds after the button is pressed. The Hacking with Swift tutorial only included local notifications, but I did a bit more configuration in AppDelegate to enable remote push notifications using the [Houston](https://github.com/nomad/Houston) command line tool for push notification testing.
 
+* [Day 22](day22) - iBeacons. This app has a single view with one label and a background color, both of which change depending on how close the device is to the iBeacon (Immediate, Near, Far, etc...). The original Hacking with Swift tutorial used a device as a beacon, but I modified this to work with [Estimote](http://www.estimote.com) beacons and the Estimote SDK (which is nearly identical to Core Location protocol for beacons).
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
