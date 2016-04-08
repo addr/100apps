@@ -57,6 +57,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 22](day22) - iBeacons. This app has a single view with one label and a background color, both of which change depending on how close the device is to the iBeacon (Immediate, Near, Far, etc...). The original Hacking with Swift tutorial used a device as a beacon, but I modified this to work with [Estimote](http://www.estimote.com) beacons and the Estimote SDK (which is nearly identical to Core Location protocol for beacons).
 
+* [Day 23](day23) - Using multipeer connectivity to create a photosharing app. Users can connect to other devices to share pictures automatically. Uses a collection view and image picker to let users choose pictures to share from the camera roll. Once added to the collection view, the picture is automatically added to the connection view of other connected peers.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
