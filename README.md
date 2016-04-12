@@ -59,6 +59,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 23](day23) - Using multipeer connectivity to create a photosharing app. Users can connect to other devices to share pictures automatically. Uses a collection view and image picker to let users choose pictures to share from the camera roll. Once added to the collection view, the picture is automatically added to the connection view of other connected peers.
 
+* [Day 24](day24) - Basic keychain and TouchID authentication. The app has a text area where users can type text that is saved to the keychain when the app is exited (closed, in the background, etc...). When the user opens the app again, they are asked to authenticate with TouchID, and a successful authentication shows what the user typed in the text field.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
