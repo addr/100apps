@@ -61,6 +61,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 24](day24) - Basic keychain and TouchID authentication. The app has a text area where users can type text that is saved to the keychain when the app is exited (closed, in the background, etc...). When the user opens the app again, they are asked to authenticate with TouchID, and a successful authentication shows what the user typed in the text field.
 
+* [Day 25](day25) - Learning about Instruments. Took an intentionally buggy Hacking with Swift project and used the Allocations, Core Animation instruments to debug some issues with image caching and shadow rendering.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
