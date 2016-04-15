@@ -63,6 +63,8 @@ I tried starting out with a 'real' project (a simple Instagram viewer that would
 
 * [Day 25](day25) - Learning about Instruments. Took an intentionally buggy Hacking with Swift project and used the Allocations, Core Animation instruments to debug some issues with image caching and shadow rendering.
 
+* [Day 26](day26) - Core Spotlight, using the new SFSafariViewController, and dynamic tableview cell sizing. Just lists some Hacking with Swift projects in a tableview and allows users to favorite different ones. Once selected, the appropriate web page is opened inside SFSafariViewController, and favorites projects are searchable using Spotlight search.
+
 # App Ideas
 
 1. Simple image viewer. Show a list of image titles in a table view that, when selected, opens a 'distraction-free', full screen view of the image.
